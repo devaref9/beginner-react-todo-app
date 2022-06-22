@@ -2,9 +2,13 @@
   @include flex-center-vert;
   justify-content: space-between;
   background-color: $color-white;
-  padding: 5px 15px;
-  height: 40px;
+  padding: 20px 15px;
   font-weight: 500;
+
+  @include respond("tablet", max) {
+    flex-wrap: wrap;
+    padding-bottom: 5px;
+  }
 
   &__count {
     color: $color-primary-dark;

@@ -6,9 +6,13 @@
   margin-bottom: 5px;
 
   &__new {
-    font-size: 30px;
+    font-size: 3rem;
     padding: 0 20px;
     width: 100%;
+
+    @include respond("tablet" , max) {
+      font-size: 3.6rem;
+    }
   }
 
   &__new::placeholder {
@@ -18,8 +22,11 @@
   &__add {
     background-color: $color-grey-light;
     cursor: pointer;
-    font-size: 14px;
     font-weight: 600;
     padding: 25px 17px;
+  }
+
+  &__add:hover {
+    background-color: darken($color-grey-light, 10);
   }
 }
