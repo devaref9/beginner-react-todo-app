@@ -1,0 +1,25 @@
+.AddTaskForm {
+  -moz-box-shadow: 0px 4px 9px -1px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 4px 9px -1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 4px 9px -1px rgba(0, 0, 0, 0.5);
+  display: flex;
+  margin-bottom: 5px;
+
+  &__new {
+    font-size: 30px;
+    padding: 0 20px;
+    width: 100%;
+  }
+
+  &__new::placeholder {
+    color: $color-grey-light;
+  }
+
+  &__add {
+    background-color: $color-grey-light;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 25px 17px;
+  }
+}
